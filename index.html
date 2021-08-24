@@ -27,9 +27,19 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <style>
-        ul{color: whitesmoke;}
-        li.nav-item{color:palevioletred;}
+        .navbar-custom{background-color: 26413C;}
+        .nav-link{color:whitesmoke;}
+        a .nav-link .active{ background-color: A4BEF3 ; }
         img{max-width:100% ,height auto}
+        .list-group{    max-height: 300px;
+                        margin-bottom: 10px;
+                        overflow:scroll;
+                        -webkit-overflow-scrolling: touch;}
+        .list-group-item{ display:list-item,
+                         decimal inside}
+
+        body{background-color:A0A083;}
+        .card{background-color: 6B4B3E; color: whitesmoke ;border: medium dotted black}
 
         /* EXERCISE 1
             For every Album we'd like to have a consistent style.
@@ -53,7 +63,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
-        <ul class="nav nav-pills nav-fill bg-dark">
+        <ul class="nav nav-pills nav-fill navbar-custom">
             <li class="nav-item">
               <a class="nav-link active" href="#">Home</a>
             </li>
@@ -64,7 +74,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
               <a class="nav-link" href="#">Disapointing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
             </li>
           </ul>
 
@@ -75,7 +85,7 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
-    <h3>All Time Favourites</h3>
+    <h1>All Time Favourites</h1>
         <div class="all-albums-container">
             <div class="row form-group">
                 <div class="card col-md-6 col-md-4 col-lg-3" style="width: 10rem;">
@@ -149,26 +159,26 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
                     </div>
                     <div class =" col col-sm-3 col-md-4 col-lg-6">
                         <h5>Tracklist</h5>
-                        <ol>
-                            <li>Opening</li>
-                            <li>Pts.OF.Athrty" (featuring Jay Gordon)</li>
-                            <li>"Enth E Nd" (featuring KutMasta Kurt and Motion Man)</li>
-                            <li>[Chali]</li>
-                            <li>"Frgt/10" (featuring Alchemist and Chali 2na)</li>
-                            <li>"P5hng Me A*wy" (featuring Stephen Richards)</li>
-                            <li>"Plc.4 Mie Hæd" (featuring Amp Live and Zion)</li>
-                            <li>"X-Ecutioner Style" (featuring Sean C, Roc Raida and Black Thought)</li>
-                            <li>"H! Vltg3" (featuring Evidence, Pharoahe Monch and DJ Babu)</li>
-                            <li>[Riff Raff]</li>
-                            <li>Ntr\Mssion</li>
-                            <li>Ppr:Kut" (featuring Cheapshot, Jubacca, Rasco and Planet Asia)</li>
-                            <li>Rnw@y" (featuring Backyard Bangers and Phoenix Orion)</li>
-                            <li>"My<Dsmbr" (featuring Mickey P. and Kelli Ali)</li>
-                            <li>[Stef]</li>
-                            <li>By_Myslf" (featuring Josh Abraham and Stephen Carpenter)</li>
-                            <li>Kyur4 th Ich" (featuring Chairman Hahn)</li>
-                            <li>1Stp Klosr" (featuring The Humble Brothers and Jonathan Davis)</li>
-                            <li>"Krwlng" (featuring Aaron Lewis)	 </li>
+                        <ol class ="list-group">
+                            <li class="list-group-item">Opening</li>
+                            <li class="list-group-item">Pts.OF.Athrty" (featuring Jay Gordon)</li>
+                            <li class="list-group-item">"Enth E Nd" (featuring KutMasta Kurt and Motion Man)</li>
+                            <li class="list-group-item">[Chali]</li>
+                            <li class="list-group-item">"Frgt/10" (featuring Alchemist and Chali 2na)</li>
+                            <li class="list-group-item">"P5hng Me A*wy" (featuring Stephen Richards)</li>
+                            <li class="list-group-item">"Plc.4 Mie Hæd" (featuring Amp Live and Zion)</li>
+                            <li class="list-group-item">"X-Ecutioner Style" (featuring Sean C, Roc Raida and Black Thought)</li>
+                            <li class="list-group-item">"H! Vltg3" (featuring Evidence, Pharoahe Monch and DJ Babu)</li>
+                            <li class="list-group-item">[Riff Raff]</li>
+                            <li class="list-group-item">Ntr\Mssion</li>
+                            <li class="list-group-item">Ppr:Kut" (featuring Cheapshot, Jubacca, Rasco and Planet Asia)</li>
+                            <li class="list-group-item">Rnw@y" (featuring Backyard Bangers and Phoenix Orion)</li>
+                            <li class="list-group-item">"My<Dsmbr" (featuring Mickey P. and Kelli Ali)</li>
+                            <li class="list-group-item">[Stef]</li>
+                            <li class="list-group-item">By_Myslf" (featuring Josh Abraham and Stephen Carpenter)</li>
+                            <li class="list-group-item">Kyur4 th Ich" (featuring Chairman Hahn)</li>
+                            <li class="list-group-item">1Stp Klosr" (featuring The Humble Brothers and Jonathan Davis)</li>
+                            <li class="list-group-item">"Krwlng" (featuring Aaron Lewis)	 </li>
                         </ol>
                     </div>
             </div>
