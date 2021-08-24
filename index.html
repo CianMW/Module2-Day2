@@ -27,7 +27,9 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <style>
-
+        ul{color: whitesmoke;}
+        li.nav-item{color:palevioletred;}
+        img{max-width:100% ,height auto}
 
         /* EXERCISE 1
             For every Album we'd like to have a consistent style.
@@ -51,15 +53,15 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             Implement a navigation bar using the bootstrap component
             This navigation bar must link every section in your page.
         -->
-        <ul class="nav nav-pills nav-fill">
+        <ul class="nav nav-pills nav-fill bg-dark">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Active</a>
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Much longer nav link</a>
+              <a class="nav-link" href="#">Reviews</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Disapointing</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
@@ -73,48 +75,49 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
             - 3 albums per row when you are on a tablet (or a smaller viewport)
             - 2 albums per row when you are on a small screen
         -->
+    <h3>All Time Favourites</h3>
         <div class="all-albums-container">
             <div class="row form-group">
                 <div class="card col-md-6 col-md-4 col-lg-3" style="width: 10rem;">
-                    <div class="card-body"><img src="..." class="card-img-top img-thumbnail" alt="...">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-body"><img src="https://m.media-amazon.com/images/I/91YCGX7hYXL._SS500_.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <h5 class="card-title">Linkin Park:Reanimation</h5>
+                    <p class="card-text">The second album release by Linkin park features remixes of songs from Hybrid Theory</p>
                     </div>
                     <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Wiki</a>
+                        <a href="#" class="card-link">Store</a>
                     </div>
                 </div>
                 <div class="card col-md-6 col-md-4 col-lg-3" style=" width: 18rem;">                   
                     <div class="card-body"><img src="https://f4.bcbits.com/img/a3654668667_10.jpg" class="card-img-top img-thumbnail" alt="...">
                     <h5 class="card-title">The Mechanisms: The Bifrost Incident</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"> A retelling of Norse myth, framed as mystery, set on an interplanetary train, using rock and prog style music.</p>
                     </div>
                     </ul>
                     <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Wiki</a>
+                        <a href="#" class="card-link">Store</a>
                     </div>
                 </div>
                 <div class="card col-md-6 col-md-4 col-lg-3" style="width: 10rem;">                   
-                    <div class="card-body"><img src="..." class="card-img-top img-thumbnail" alt="...">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="card-body"><img src="https://img.discogs.com/NT_1krpX3w_jRzXQb_Ne_fL2KDM=/fit-in/600x600/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-2063489-1425899475-2774.jpeg.jpg" class="card-img-top img-thumbnail" alt="...">
+                    <h5 class="card-title">The Dubliners: Plain and Simple</h5>
+                    <p class="card-text">A mix of traditional irish-country and satyrical ballads produced around the troubles plaguing the time.</p>
                     </div>
                     <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                        <a href="#" class="card-link">Wiki</a>
+                        <a href="#" class="card-link">Store</a>
                     </div>
                 </div>
                 <div class="card col-md-6 col-md-4 col-lg-3" style=" width: 18rem;">                
                     <div class="card-body"><img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Alestorm-NoGraveButTheSea.jpg" class="card-img-top img-thumbnail" alt="...">
                     <h5 class="card-title">Alestorm: No Grave but the Sea" </h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <p class="card-text"> The fifth studio album by Scottish heavy metal band Alestorm. </p>
                     </div>
                     </ul>
                     <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <a href="#" class="card-link">Wiki</a>
+                    <a href="#" class="card-link">Store</a>
                     </div>
                 </div>
             </div>
@@ -135,18 +138,42 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
         -->
         <div class="container">
             <div class="row">
-                <h3 class="heading">Reviews</h3>>
-            </div>
-            <div class="row">
-                <div class="reviews">
-                    <div class="col-md-6 col-md-4 col-lg-3">
-                        <img src="..." class="img-fluid" alt="...">
-
-                    </div>
-                </div>
+                <h3 class="heading">Reviews</h3>
             </div>
         </div>
+        <div class="container">
+            <div class="row">
+                    <div class="col-sm-6 col-md-4 col-lg-4">
+                        <img src="https://m.media-amazon.com/images/I/91YCGX7hYXL._SS500_.jpg" class=" img-fluid img-thumbnail" alt="...">
 
+                    </div>
+                    <div class =" col col-sm-3 col-md-4 col-lg-6">
+                        <h5>Tracklist</h5>
+                        <ol>
+                            <li>Opening</li>
+                            <li>Pts.OF.Athrty" (featuring Jay Gordon)</li>
+                            <li>"Enth E Nd" (featuring KutMasta Kurt and Motion Man)</li>
+                            <li>[Chali]</li>
+                            <li>"Frgt/10" (featuring Alchemist and Chali 2na)</li>
+                            <li>"P5hng Me A*wy" (featuring Stephen Richards)</li>
+                            <li>"Plc.4 Mie Hæd" (featuring Amp Live and Zion)</li>
+                            <li>"X-Ecutioner Style" (featuring Sean C, Roc Raida and Black Thought)</li>
+                            <li>"H! Vltg3" (featuring Evidence, Pharoahe Monch and DJ Babu)</li>
+                            <li>[Riff Raff]</li>
+                            <li>Ntr\Mssion</li>
+                            <li>Ppr:Kut" (featuring Cheapshot, Jubacca, Rasco and Planet Asia)</li>
+                            <li>Rnw@y" (featuring Backyard Bangers and Phoenix Orion)</li>
+                            <li>"My<Dsmbr" (featuring Mickey P. and Kelli Ali)</li>
+                            <li>[Stef]</li>
+                            <li>By_Myslf" (featuring Josh Abraham and Stephen Carpenter)</li>
+                            <li>Kyur4 th Ich" (featuring Chairman Hahn)</li>
+                            <li>1Stp Klosr" (featuring The Humble Brothers and Jonathan Davis)</li>
+                            <li>"Krwlng" (featuring Aaron Lewis)	 </li>
+                        </ol>
+                    </div>
+            </div>
+        </div>
+    </div>
     <!-- EXERCISE 5
             Worst album list! Choose the albums you dislike or some you think are overrated and list it
             in this "hall of shame" chart! 
